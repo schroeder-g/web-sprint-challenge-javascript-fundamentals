@@ -26,14 +26,22 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
-
+ Both are array methods that loop through the entire array and perform some logic on each index. `foreach` modifies the given array based on the parameters you lay out for it. `map` returns a new array that is modified based on your instructions.
 2. Explain the difference between a callback and a higher order function.
-
+A callback function is a function that is passed as an argument to another function. A higher-order function is what does the calling-back; that is, it takes callback functions as arguments and/or returns functions as their result.
 3. What is closure?
-
+Closure is how functions navigate scope; specifically, it is when an inner function 'reaches out' to a broader scope to pull in other functions and variables. 
 4. Describe the four rules of the 'this' keyword.
+Global/Window this: outside of any function / object / variable scope, when you call this it refers to the window object (unless you're in 'use strict' mode).
+
+Implicit this. 80% of cases, when you're dealing with an instance of a class, looking at the instantiantion call, this refers to what is left of the dot. 
+
+New this. It's when you're creating an object with the 'new' keyword.
+
+Explicit this. It's when you are argumentatively defining the binding of this using an object method like bind, call, or apply.
 
 5. Why do we need super() in an extended class?
+Super replaces the bind call and apply methods to ensure that the new object in the prototype chain inherits its parent's functions.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -64,7 +72,7 @@ Test your knowledge of advanced array methods and callbacks.
 #### Task B: Closure
 
 This challenge takes a look at closures as well as scope. 
-* [ ] Use the [closure.js](challenges/closure.js) link to get started. Read the instructions carefully!
+* [X] Use the [closure.js](challenges/closure.js) link to get started. Read the instructions carefully!
 
 #### Task C: Prototypes
 

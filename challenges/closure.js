@@ -17,8 +17,17 @@ function myFunction() {
 myFunction();
 
 // Explanation: 
-
+//Esentially, javascript code can reach out of its own scope, but never in. Since nestedFunction is inside myFunction,
+//and internal is at a broader scope in the same function, nestedFunction can access the variable. 
 
 /* Task 2: Counter */
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+function summation(num){
+  counter = 0
+  for (let i = 1; i<=num; i++){
+    counter += i
+  }
+  console.log(`The summation for ${num} is ${counter}.`)
+}
+summation(4)
